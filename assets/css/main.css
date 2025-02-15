@@ -705,34 +705,17 @@ h6 {
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
-.scroll-top {
+.wtsp-scroll {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
+  right: 8px;
+  bottom: 6px;
   z-index: 99999;
-  background-color: var(--accent-color);
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
+  max-width: 250px;
   transition: all 0.4s;
 }
 
-.scroll-top i {
-  font-size: 24px;
-  color: var(--contrast-color);
-  line-height: 0;
-}
-
-.scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: var(--contrast-color);
-}
-
-.scroll-top.active {
-  visibility: visible;
-  opacity: 1;
+.wtsp-chat img {
+  max-width: 250px;
 }
 
 /*--------------------------------------------------------------
@@ -912,7 +895,8 @@ section,
   font-size: 24px;
 }
 
-.hero .btn-get-started {
+.hero .btn-get-started,
+.main-btn.btn-get-started {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 2px;
@@ -924,7 +908,8 @@ section,
   color: var(--contrast-color);
 }
 
-.hero .btn-get-started:hover {
+.hero .btn-get-started:hover,
+.main-btn.btn-get-started:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
